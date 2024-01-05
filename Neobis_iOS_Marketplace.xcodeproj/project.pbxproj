@@ -7,23 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36DD65BD1C62B732A12C7B19 /* Pods_Neobis_iOS_Marketplace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5112D9961A882259AE542054 /* Pods_Neobis_iOS_Marketplace.framework */; };
 		DD6099802B34644F00CFDC77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60997F2B34644F00CFDC77 /* AppDelegate.swift */; };
 		DD6099822B34644F00CFDC77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099812B34644F00CFDC77 /* SceneDelegate.swift */; };
-		DD6099842B34644F00CFDC77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099832B34644F00CFDC77 /* ViewController.swift */; };
-		DD6099872B34644F00CFDC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6099852B34644F00CFDC77 /* Main.storyboard */; };
+		DD6099842B34644F00CFDC77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099832B34644F00CFDC77 /* LoginViewController.swift */; };
 		DD6099892B34645100CFDC77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD6099882B34645100CFDC77 /* Assets.xcassets */; };
-		DD60998C2B34645100CFDC77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD60998A2B34645100CFDC77 /* LaunchScreen.storyboard */; };
+		DD6099952B3484E100CFDC77 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099942B3484E100CFDC77 /* LoginView.swift */; };
+		DD6099972B37D44600CFDC77 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099962B37D44600CFDC77 /* CustomTextField.swift */; };
+		DD6099A32B396EDE00CFDC77 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099A22B396EDE00CFDC77 /* PasswordTextField.swift */; };
+		DD6099A72B39886C00CFDC77 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099A62B39886C00CFDC77 /* ProfileView.swift */; };
+		DD6099A92B398ACD00CFDC77 /* ProfileTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099A82B398ACD00CFDC77 /* ProfileTVCell.swift */; };
+		DD6099AC2B398F4700CFDC77 /* profileCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099AB2B398F4700CFDC77 /* profileCategory.swift */; };
+		DD6099B42B3DE3FB00CFDC77 /* gothampro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD6099B32B3DE3FB00CFDC77 /* gothampro.ttf */; };
+		DD6099B62B3DE40500CFDC77 /* gothampro_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD6099B52B3DE40500CFDC77 /* gothampro_medium.ttf */; };
+		DD6099B82B3DE41800CFDC77 /* gothampro_mediumitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD6099B72B3DE41800CFDC77 /* gothampro_mediumitalic.ttf */; };
+		DD6099BA2B3DE42E00CFDC77 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD6099B92B3DE42E00CFDC77 /* Nunito-Regular.ttf */; };
+		DD6099BC2B426A4600CFDC77 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099BB2B426A4600CFDC77 /* TabBarController.swift */; };
+		DD6099BE2B426A9100CFDC77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099BD2B426A9100CFDC77 /* MainViewController.swift */; };
+		DD6099C02B426A9B00CFDC77 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099BF2B426A9B00CFDC77 /* ChatsViewController.swift */; };
+		DD6099C22B426AAA00CFDC77 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099C12B426AAA00CFDC77 /* WalletViewController.swift */; };
+		DD6099C42B426ADA00CFDC77 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099C32B426ADA00CFDC77 /* AddViewController.swift */; };
+		DD6099C62B43358E00CFDC77 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099C52B43358E00CFDC77 /* CustomButton.swift */; };
+		DD6099C92B434A5400CFDC77 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099C82B434A5400CFDC77 /* RegisterView.swift */; };
+		DD6099CB2B434A6200CFDC77 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099CA2B434A6200CFDC77 /* RegisterViewController.swift */; };
+		DD6099F62B43E02100CFDC77 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099F52B43E02100CFDC77 /* PasswordViewController.swift */; };
+		DD6099F92B43E03B00CFDC77 /* PasswordConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099F82B43E03B00CFDC77 /* PasswordConfirmationViewController.swift */; };
+		DD6099FB2B43E04B00CFDC77 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099FA2B43E04B00CFDC77 /* PasswordView.swift */; };
+		DD6099FD2B43E05A00CFDC77 /* PasswordConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099FC2B43E05A00CFDC77 /* PasswordConfirmationView.swift */; };
+		DD6099FF2B448DC600CFDC77 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6099FE2B448DC600CFDC77 /* ProfileViewController.swift */; };
+		DD609A012B44942F00CFDC77 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD609A002B44942F00CFDC77 /* Nunito-Black.ttf */; };
+		DD609A042B48262600CFDC77 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A032B48262600CFDC77 /* APIService.swift */; };
+		DD609A082B4826FB00CFDC77 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A072B4826FB00CFDC77 /* Model.swift */; };
+		DD609A0C2B48287900CFDC77 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A0B2B48287900CFDC77 /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5112D9961A882259AE542054 /* Pods_Neobis_iOS_Marketplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neobis_iOS_Marketplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BB8032E8603126C9E79A12 /* Pods-Neobis_iOS_Marketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_Marketplace.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_Marketplace/Pods-Neobis_iOS_Marketplace.release.xcconfig"; sourceTree = "<group>"; };
+		D58D661B9A0C2B12257E210D /* Pods-Neobis_iOS_Marketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_Marketplace.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_Marketplace/Pods-Neobis_iOS_Marketplace.debug.xcconfig"; sourceTree = "<group>"; };
 		DD60997C2B34644F00CFDC77 /* Neobis_iOS_Marketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_Marketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD60997F2B34644F00CFDC77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD6099812B34644F00CFDC77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD6099832B34644F00CFDC77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD6099862B34644F00CFDC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD6099832B34644F00CFDC77 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD6099882B34645100CFDC77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD60998B2B34645100CFDC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD60998D2B34645100CFDC77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD6099942B3484E100CFDC77 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DD6099962B37D44600CFDC77 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		DD6099A22B396EDE00CFDC77 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		DD6099A62B39886C00CFDC77 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DD6099A82B398ACD00CFDC77 /* ProfileTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTVCell.swift; sourceTree = "<group>"; };
+		DD6099AB2B398F4700CFDC77 /* profileCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileCategory.swift; sourceTree = "<group>"; };
+		DD6099B32B3DE3FB00CFDC77 /* gothampro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gothampro.ttf; sourceTree = "<group>"; };
+		DD6099B52B3DE40500CFDC77 /* gothampro_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gothampro_medium.ttf; sourceTree = "<group>"; };
+		DD6099B72B3DE41800CFDC77 /* gothampro_mediumitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gothampro_mediumitalic.ttf; sourceTree = "<group>"; };
+		DD6099B92B3DE42E00CFDC77 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		DD6099BB2B426A4600CFDC77 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DD6099BD2B426A9100CFDC77 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DD6099BF2B426A9B00CFDC77 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		DD6099C12B426AAA00CFDC77 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		DD6099C32B426ADA00CFDC77 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		DD6099C52B43358E00CFDC77 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		DD6099C82B434A5400CFDC77 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		DD6099CA2B434A6200CFDC77 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DD6099F52B43E02100CFDC77 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		DD6099F82B43E03B00CFDC77 /* PasswordConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordConfirmationViewController.swift; sourceTree = "<group>"; };
+		DD6099FA2B43E04B00CFDC77 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		DD6099FC2B43E05A00CFDC77 /* PasswordConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordConfirmationView.swift; sourceTree = "<group>"; };
+		DD6099FE2B448DC600CFDC77 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DD609A002B44942F00CFDC77 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		DD609A032B48262600CFDC77 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DD609A072B4826FB00CFDC77 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DD609A0B2B48287900CFDC77 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +85,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36DD65BD1C62B732A12C7B19 /* Pods_Neobis_iOS_Marketplace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		587566820EC1D30A4E6D864D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D58D661B9A0C2B12257E210D /* Pods-Neobis_iOS_Marketplace.debug.xcconfig */,
+				83BB8032E8603126C9E79A12 /* Pods-Neobis_iOS_Marketplace.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD6099732B34644F00CFDC77 = {
 			isa = PBXGroup;
 			children = (
 				DD60997E2B34644F00CFDC77 /* Neobis_iOS_Marketplace */,
 				DD60997D2B34644F00CFDC77 /* Products */,
+				587566820EC1D30A4E6D864D /* Pods */,
+				F15265D0DDD055F13355E667 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +122,128 @@
 		DD60997E2B34644F00CFDC77 /* Neobis_iOS_Marketplace */ = {
 			isa = PBXGroup;
 			children = (
-				DD60997F2B34644F00CFDC77 /* AppDelegate.swift */,
-				DD6099812B34644F00CFDC77 /* SceneDelegate.swift */,
-				DD6099832B34644F00CFDC77 /* ViewController.swift */,
-				DD6099852B34644F00CFDC77 /* Main.storyboard */,
-				DD6099882B34645100CFDC77 /* Assets.xcassets */,
-				DD60998A2B34645100CFDC77 /* LaunchScreen.storyboard */,
+				DD609A0D2B48289C00CFDC77 /* Registration */,
+				DD609A022B48261500CFDC77 /* Service */,
+				DD6099AD2B398FDD00CFDC77 /* Profile */,
 				DD60998D2B34645100CFDC77 /* Info.plist */,
+				DD6099A52B396FE700CFDC77 /* Custom */,
+				DD6099A42B396FDA00CFDC77 /* Login */,
+				DD6099932B3483A600CFDC77 /* Supporting */,
+				DD6099BB2B426A4600CFDC77 /* TabBarController.swift */,
+				DD6099BD2B426A9100CFDC77 /* MainViewController.swift */,
+				DD6099BF2B426A9B00CFDC77 /* ChatsViewController.swift */,
+				DD6099C12B426AAA00CFDC77 /* WalletViewController.swift */,
+				DD6099C32B426ADA00CFDC77 /* AddViewController.swift */,
+				DD609A072B4826FB00CFDC77 /* Model.swift */,
 			);
 			path = Neobis_iOS_Marketplace;
+			sourceTree = "<group>";
+		};
+		DD6099932B3483A600CFDC77 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				DD6099B02B3DE3AA00CFDC77 /* Fonts */,
+				DD6099882B34645100CFDC77 /* Assets.xcassets */,
+				DD60997F2B34644F00CFDC77 /* AppDelegate.swift */,
+				DD6099812B34644F00CFDC77 /* SceneDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		DD6099A42B396FDA00CFDC77 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DD6099832B34644F00CFDC77 /* LoginViewController.swift */,
+				DD6099942B3484E100CFDC77 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DD6099A52B396FE700CFDC77 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				DD6099962B37D44600CFDC77 /* CustomTextField.swift */,
+				DD6099A22B396EDE00CFDC77 /* PasswordTextField.swift */,
+				DD6099C52B43358E00CFDC77 /* CustomButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		DD6099AD2B398FDD00CFDC77 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DD6099AB2B398F4700CFDC77 /* profileCategory.swift */,
+				DD6099A62B39886C00CFDC77 /* ProfileView.swift */,
+				DD6099A82B398ACD00CFDC77 /* ProfileTVCell.swift */,
+				DD6099FE2B448DC600CFDC77 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DD6099B02B3DE3AA00CFDC77 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DD6099B92B3DE42E00CFDC77 /* Nunito-Regular.ttf */,
+				DD609A002B44942F00CFDC77 /* Nunito-Black.ttf */,
+				DD6099B72B3DE41800CFDC77 /* gothampro_mediumitalic.ttf */,
+				DD6099B52B3DE40500CFDC77 /* gothampro_medium.ttf */,
+				DD6099B32B3DE3FB00CFDC77 /* gothampro.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DD6099C72B434A2D00CFDC77 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DD6099C82B434A5400CFDC77 /* RegisterView.swift */,
+				DD6099CA2B434A6200CFDC77 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		DD6099F42B43DFFC00CFDC77 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				DD6099F52B43E02100CFDC77 /* PasswordViewController.swift */,
+				DD6099FA2B43E04B00CFDC77 /* PasswordView.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		DD6099F72B43E02400CFDC77 /* PasswordConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				DD6099F82B43E03B00CFDC77 /* PasswordConfirmationViewController.swift */,
+				DD6099FC2B43E05A00CFDC77 /* PasswordConfirmationView.swift */,
+			);
+			path = PasswordConfirmation;
+			sourceTree = "<group>";
+		};
+		DD609A022B48261500CFDC77 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DD609A032B48262600CFDC77 /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DD609A0D2B48289C00CFDC77 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				DD609A0B2B48287900CFDC77 /* RegistrationViewModel.swift */,
+				DD6099F72B43E02400CFDC77 /* PasswordConfirmation */,
+				DD6099F42B43DFFC00CFDC77 /* Password */,
+				DD6099C72B434A2D00CFDC77 /* Register */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		F15265D0DDD055F13355E667 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5112D9961A882259AE542054 /* Pods_Neobis_iOS_Marketplace.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD6099902B34645100CFDC77 /* Build configuration list for PBXNativeTarget "Neobis_iOS_Marketplace" */;
 			buildPhases = (
+				864B822775C9E0F6E4231F7C /* [CP] Check Pods Manifest.lock */,
 				DD6099782B34644F00CFDC77 /* Sources */,
 				DD6099792B34644F00CFDC77 /* Frameworks */,
 				DD60997A2B34644F00CFDC77 /* Resources */,
+				2F8AC64866EDD8E77B47959D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,45 +306,93 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD60998C2B34645100CFDC77 /* LaunchScreen.storyboard in Resources */,
+				DD6099BA2B3DE42E00CFDC77 /* Nunito-Regular.ttf in Resources */,
+				DD6099B62B3DE40500CFDC77 /* gothampro_medium.ttf in Resources */,
+				DD6099B82B3DE41800CFDC77 /* gothampro_mediumitalic.ttf in Resources */,
+				DD6099B42B3DE3FB00CFDC77 /* gothampro.ttf in Resources */,
 				DD6099892B34645100CFDC77 /* Assets.xcassets in Resources */,
-				DD6099872B34644F00CFDC77 /* Main.storyboard in Resources */,
+				DD609A012B44942F00CFDC77 /* Nunito-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F8AC64866EDD8E77B47959D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_Marketplace/Pods-Neobis_iOS_Marketplace-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_Marketplace/Pods-Neobis_iOS_Marketplace-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_Marketplace/Pods-Neobis_iOS_Marketplace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		864B822775C9E0F6E4231F7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neobis_iOS_Marketplace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD6099782B34644F00CFDC77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD6099842B34644F00CFDC77 /* ViewController.swift in Sources */,
+				DD6099842B34644F00CFDC77 /* LoginViewController.swift in Sources */,
+				DD6099FB2B43E04B00CFDC77 /* PasswordView.swift in Sources */,
+				DD6099A92B398ACD00CFDC77 /* ProfileTVCell.swift in Sources */,
+				DD6099BC2B426A4600CFDC77 /* TabBarController.swift in Sources */,
+				DD6099BE2B426A9100CFDC77 /* MainViewController.swift in Sources */,
+				DD6099C62B43358E00CFDC77 /* CustomButton.swift in Sources */,
+				DD6099FF2B448DC600CFDC77 /* ProfileViewController.swift in Sources */,
+				DD6099FD2B43E05A00CFDC77 /* PasswordConfirmationView.swift in Sources */,
+				DD6099C02B426A9B00CFDC77 /* ChatsViewController.swift in Sources */,
+				DD6099F92B43E03B00CFDC77 /* PasswordConfirmationViewController.swift in Sources */,
+				DD609A082B4826FB00CFDC77 /* Model.swift in Sources */,
+				DD6099F62B43E02100CFDC77 /* PasswordViewController.swift in Sources */,
+				DD6099C42B426ADA00CFDC77 /* AddViewController.swift in Sources */,
+				DD6099C92B434A5400CFDC77 /* RegisterView.swift in Sources */,
+				DD6099CB2B434A6200CFDC77 /* RegisterViewController.swift in Sources */,
 				DD6099802B34644F00CFDC77 /* AppDelegate.swift in Sources */,
+				DD6099A32B396EDE00CFDC77 /* PasswordTextField.swift in Sources */,
+				DD6099952B3484E100CFDC77 /* LoginView.swift in Sources */,
+				DD6099C22B426AAA00CFDC77 /* WalletViewController.swift in Sources */,
+				DD609A042B48262600CFDC77 /* APIService.swift in Sources */,
+				DD609A0C2B48287900CFDC77 /* RegistrationViewModel.swift in Sources */,
 				DD6099822B34644F00CFDC77 /* SceneDelegate.swift in Sources */,
+				DD6099A72B39886C00CFDC77 /* ProfileView.swift in Sources */,
+				DD6099AC2B398F4700CFDC77 /* profileCategory.swift in Sources */,
+				DD6099972B37D44600CFDC77 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DD6099852B34644F00CFDC77 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD6099862B34644F00CFDC77 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DD60998A2B34645100CFDC77 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD60998B2B34645100CFDC77 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DD60998E2B34645100CFDC77 /* Debug */ = {
@@ -203,7 +432,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +495,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +516,7 @@
 		};
 		DD6099912B34645100CFDC77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D58D661B9A0C2B12257E210D /* Pods-Neobis_iOS_Marketplace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,9 +527,9 @@
 				INFOPLIST_FILE = Neobis_iOS_Marketplace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +545,7 @@
 		};
 		DD6099922B34645100CFDC77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83BB8032E8603126C9E79A12 /* Pods-Neobis_iOS_Marketplace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,9 +556,9 @@
 				INFOPLIST_FILE = Neobis_iOS_Marketplace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

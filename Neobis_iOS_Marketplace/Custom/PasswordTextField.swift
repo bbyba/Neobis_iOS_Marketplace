@@ -20,17 +20,21 @@ class PasswordTextField: UITextField {
     }
 
     private func setupTextField() {
-        self.borderStyle = .roundedRect
+        self.backgroundColor = .white
         self.autocapitalizationType = .none
         self.autocorrectionType = .no
 //        self.clearButtonMode = .whileEditing
-        self.backgroundColor = UIColor(red:248/255, green: 248/255, blue: 248/255, alpha: 1)
         self.textColor = .black
-        if let font = UIFont(name: "gothampro", size: 16) {
+        if let font = UIFont(name: "GothamPro-Medium", size: 16) {
             self.font = font
             self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "", attributes: [NSAttributedString.Key.font: font])
         }
         self.isSecureTextEntry = true
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowRadius = 0.0
+        self.layer.masksToBounds = false
     }
 }
 

@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class ProfileTVCell: UITableViewCell {
     
@@ -16,9 +17,8 @@ class ProfileTVCell: UITableViewCell {
     
     lazy var category: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "gothampro", size: 16)
-        label.textColor = .lightGray
-        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: "GothamPro-Medium", size: 16)
+        label.textColor = .black
         
         return label
     }()
@@ -74,3 +74,4 @@ class ProfileTVCell: UITableViewCell {
     }
 
 }
+

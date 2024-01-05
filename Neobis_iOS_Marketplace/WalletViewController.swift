@@ -2,8 +2,7 @@
 //  WalletViewController.swift
 //  Neobis_iOS_Marketplace
 //
-//  Created by Burte Bayaraa on 2024.01.01.
-//
+
 
 import UIKit
 
@@ -11,7 +10,7 @@ class WalletViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .brown
         // Do any additional setup after loading the view.
     }
     

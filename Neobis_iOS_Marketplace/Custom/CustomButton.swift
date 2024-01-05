@@ -2,8 +2,6 @@
 //  CustomButton.swift
 //  Neobis_iOS_Marketplace
 //
-//  Created by Burte Bayaraa on 2024.01.02.
-//
 
 import UIKit
 

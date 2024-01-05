@@ -6,7 +6,7 @@
 import Foundation
 
 protocol RegisterViewModelProtocol {
-    func register(user: RegisterDto)
+    func register(user: Registration)
 }
 
 class RegisterViewModel: RegisterViewModelProtocol {
@@ -18,7 +18,7 @@ class RegisterViewModel: RegisterViewModelProtocol {
         self.apiService = apiService
     }
     
-    func register(user: RegisterDto) {
+    func register(user: Registration) {
         apiService.post(endpoint: endpoint, data: user) { (result) in
             switch result {
             case .success(_):

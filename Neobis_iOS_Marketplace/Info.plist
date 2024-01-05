@@ -4,10 +4,11 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>gothampro.ttf</string>
 		<string>gothampro_mediumitalic.ttf</string>
 		<string>gothampro_medium.ttf</string>
-		<string>gothampro.ttf</string>
-		<string>nunito.ttf</string>
+		<string>Nunito-Regular.ttf</string>
+		<string>Nunito-Black.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

@@ -2,8 +2,6 @@
 //  AddViewController.swift
 //  Neobis_iOS_Marketplace
 //
-//  Created by Burte Bayaraa on 2024.01.01.
-//
 
 import UIKit
 
@@ -11,7 +9,7 @@ class AddViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .green
         // Do any additional setup after loading the view.
     }
     

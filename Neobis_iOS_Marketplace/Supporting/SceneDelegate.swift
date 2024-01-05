@@ -13,13 +13,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = ViewController()
-//        window.rootViewController = ViewController()
-//        window.rootViewController = UINavigationController(rootViewController: ViewController())
+//        window.rootViewController = LoginViewController()
+        window.rootViewController = UINavigationController(rootViewController: LoginViewController())
         window.makeKeyAndVisible()
         
         self.window = window
     }
+    
 
 //
 //    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {

@@ -2,28 +2,23 @@
 //  ProfileViewController.swift
 //  Neobis_iOS_Marketplace
 //
-//  Created by Burte Bayaraa on 2024.01.03.
-//
 
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
+    lazy var profileView = ProfileView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationItem.titleView = profileView.titleLabel
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: profileView.changeButton)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func loadView() {
+        self.view = profileView
     }
-    */
-
 }
+ 
+    
+
