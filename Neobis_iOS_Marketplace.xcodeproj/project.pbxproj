@@ -47,6 +47,8 @@
 		DD609A1D2B4B585E00CFDC77 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A1C2B4B585E00CFDC77 /* FavoritesView.swift */; };
 		DD609A1F2B4B586D00CFDC77 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A1E2B4B586D00CFDC77 /* FavoritesViewController.swift */; };
 		DD609A242B4B5E3500CFDC77 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A232B4B5E3400CFDC77 /* CustomAlertView.swift */; };
+		DD609A272B4C4ACC00CFDC77 /* MyProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A262B4C4ACC00CFDC77 /* MyProductsView.swift */; };
+		DD609A292B4C4AEB00CFDC77 /* MyProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A282B4C4AEB00CFDC77 /* MyProductsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		DD609A1C2B4B585E00CFDC77 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		DD609A1E2B4B586D00CFDC77 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		DD609A232B4B5E3400CFDC77 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		DD609A262B4C4ACC00CFDC77 /* MyProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProductsView.swift; sourceTree = "<group>"; };
+		DD609A282B4C4AEB00CFDC77 /* MyProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProductsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,9 +194,10 @@
 		DD6099AD2B398FDD00CFDC77 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				DD609A212B4B5D5100CFDC77 /* LogoutAlert */,
 				DD609A202B4B5D2F00CFDC77 /* MainProfileScreen */,
 				DD609A1B2B4B584100CFDC77 /* Favorites */,
+				DD609A252B4C4AA400CFDC77 /* MyProducts */,
+				DD609A212B4B5D5100CFDC77 /* LogoutAlert */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -316,6 +321,15 @@
 				DD609A232B4B5E3400CFDC77 /* CustomAlertView.swift */,
 			);
 			path = CustomAlert;
+			sourceTree = "<group>";
+		};
+		DD609A252B4C4AA400CFDC77 /* MyProducts */ = {
+			isa = PBXGroup;
+			children = (
+				DD609A262B4C4ACC00CFDC77 /* MyProductsView.swift */,
+				DD609A282B4C4AEB00CFDC77 /* MyProductsViewController.swift */,
+			);
+			path = MyProducts;
 			sourceTree = "<group>";
 		};
 		F15265D0DDD055F13355E667 /* Frameworks */ = {
@@ -461,7 +475,9 @@
 				DD6099F92B43E03B00CFDC77 /* PasswordConfirmationViewController.swift in Sources */,
 				DD609A082B4826FB00CFDC77 /* Model.swift in Sources */,
 				DD6099F62B43E02100CFDC77 /* PasswordViewController.swift in Sources */,
+				DD609A292B4C4AEB00CFDC77 /* MyProductsViewController.swift in Sources */,
 				DD6099C42B426ADA00CFDC77 /* AddViewController.swift in Sources */,
+				DD609A272B4C4ACC00CFDC77 /* MyProductsView.swift in Sources */,
 				DD6099C92B434A5400CFDC77 /* RegisterView.swift in Sources */,
 				DD6099CB2B434A6200CFDC77 /* RegisterViewController.swift in Sources */,
 				DD6099802B34644F00CFDC77 /* AppDelegate.swift in Sources */,

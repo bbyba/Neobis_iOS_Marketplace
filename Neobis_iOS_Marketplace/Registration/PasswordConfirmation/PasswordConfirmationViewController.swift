@@ -34,10 +34,19 @@ class PasswordConfirmationViewController: UIViewController {
         passwordConfirmationView.passwordTextField.addTarget(self, action: #selector(confirmPassword), for: .editingChanged)
         passwordConfirmationView.confirmPasswordTextField.addTarget(self, action: #selector(confirmPassword), for: .editingChanged)
         passwordConfirmationView.nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        passwordConfirmationView.hideButton.addTarget(self, action: #selector(togglePasswordVisibility), for: .touchUpInside)
     }
     
     @objc func popToPrevious(){
         navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func togglePasswordVisibility() {
+        let isSecureEntry = passwordConfirmationView.passwordTextField.isSecureTextEntry
+        passwordConfirmationView.passwordTextField.isSecureTextEntry = !isSecureEntry
+        passwordConfirmationView.confirmPasswordTextField.isSecureTextEntry = !isSecureEntry
+        let imageName = isSecureEntry ? "openEye" : "closedEye"
+        passwordConfirmationView.hideButton.setImage(UIImage(named: imageName), for: .normal)
     }
     
     @objc func confirmPassword() {
@@ -70,7 +79,6 @@ class PasswordConfirmationViewController: UIViewController {
         }
         
         viewModel?.setPasswordConfirm(inputData: passwordConfirm)
-        
         viewModel?.register()
     }
     

@@ -19,7 +19,7 @@ class PasswordConfirmationView: PasswordView {
     
     lazy var mismatchPasswordLabel: UILabel = {
         let label = UILabel()
-        label.text = "Passwords don't match"
+        label.text = "Passwords do not match"
         label.textColor = .red
         label.font = UIFont(name: "GothamPro", size: 12)
         label.textAlignment = .center

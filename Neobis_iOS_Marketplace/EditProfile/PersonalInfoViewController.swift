@@ -37,7 +37,8 @@ class PersonalInfoViewController: UIViewController {
     }
     
     @objc func cancelButtonTapped(){
-        
+//        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     @objc func doneButtonTapped(){

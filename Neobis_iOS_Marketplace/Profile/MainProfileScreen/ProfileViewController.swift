@@ -10,6 +10,7 @@ class ProfileViewController: UIViewController {
     lazy var profileView = ProfileView()
     lazy var editProfilerVC = PersonalInfoViewController()
     lazy var favoritesVC = FavoritesViewController()
+    lazy var myProductsVC = MyProductsViewController()
     
     override func loadView() {
         self.view = profileView
@@ -29,7 +30,6 @@ class ProfileViewController: UIViewController {
     }
 
     @objc func changeButtonTapped() {
-        print("changeButtonTapped")
         navigationController?.pushViewController(editProfilerVC, animated: true)
     }
 }
@@ -43,8 +43,8 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
             switch indexPath.row {
             case 0:
                 navigationController?.pushViewController(favoritesVC, animated: true)
-//            case 1:
-//                navigationController?.pushViewController(myProductsVC, animated: true)
+            case 1:
+                navigationController?.pushViewController(myProductsVC, animated: true)
             default:
                 break
             }

@@ -37,6 +37,7 @@ class PasswordViewController: UIViewController {
         passwordView.backButton.addTarget(self, action: #selector(popToPrevious), for: .touchUpInside)
         passwordView.nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
         passwordView.passwordTextField.addTarget(self, action: #selector(passwordTextFieldChanged), for: .editingChanged)
+        passwordView.hideButton.addTarget(self, action: #selector(togglePasswordVisibility), for: .touchUpInside)
     }
     
     @objc func popToPrevious(){
@@ -56,6 +57,11 @@ class PasswordViewController: UIViewController {
         navigationController?.pushViewController(passwordConfirmationVC, animated: true)
     }
     
+    @objc func togglePasswordVisibility() {
+        passwordView.passwordTextField.isSecureTextEntry.toggle()
+        let imageName = passwordView.passwordTextField.isSecureTextEntry ? "closedEye" : "openEye"
+        passwordView.hideButton.setImage(UIImage(named: imageName), for: .normal)
+    }
     //MARK: - Password check
     
     @objc func passwordTextFieldChanged(_ textField: UITextField) {
