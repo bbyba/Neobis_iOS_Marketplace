@@ -8,7 +8,16 @@ import UIKit
 class PasswordViewController: UIViewController {
     
     lazy var passwordView = PasswordView()
-    let passwordConfirmationVC = PasswordConfirmationViewController()
+    var viewModel: RegisterViewModel
+    
+    init(viewModel: RegisterViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    override func loadView() {
+        self.view = passwordView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +29,9 @@ class PasswordViewController: UIViewController {
         addTargets()
     }
     
-    override func loadView() {
-        self.view = passwordView
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
-
     
     func addTargets(){
         passwordView.backButton.addTarget(self, action: #selector(popToPrevious), for: .touchUpInside)
@@ -36,6 +44,15 @@ class PasswordViewController: UIViewController {
     }
     
     @objc func nextButtonTapped(){
+        guard let password = passwordView.passwordTextField.text
+        else {
+            print("Invalid input. Please check your data.")
+            return
+        }
+        
+        viewModel.setPassword(inputData: password)
+        
+        let passwordConfirmationVC = PasswordConfirmationViewController(viewModel: viewModel)
         navigationController?.pushViewController(passwordConfirmationVC, animated: true)
     }
     

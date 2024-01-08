@@ -8,6 +8,16 @@ import UIKit
 class PasswordConfirmationViewController: UIViewController {
     
     lazy var passwordConfirmationView = PasswordConfirmationView()
+    var viewModel: RegisterViewModel?
+    
+    init(viewModel: RegisterViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    override func loadView() {
+        self.view = passwordConfirmationView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,14 +29,11 @@ class PasswordConfirmationViewController: UIViewController {
         addTargets()
     }
     
-    override func loadView() {
-        self.view = passwordConfirmationView
-    }
-    
     func addTargets(){
         passwordConfirmationView.backButton.addTarget(self, action: #selector(popToPrevious), for: .touchUpInside)
         passwordConfirmationView.passwordTextField.addTarget(self, action: #selector(confirmPassword), for: .editingChanged)
         passwordConfirmationView.confirmPasswordTextField.addTarget(self, action: #selector(confirmPassword), for: .editingChanged)
+        passwordConfirmationView.nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
     }
     
     @objc func popToPrevious(){
@@ -53,6 +60,22 @@ class PasswordConfirmationViewController: UIViewController {
             passwordConfirmationView.passwordTextField.textColor = .systemRed
             passwordConfirmationView.confirmPasswordTextField.textColor = .systemRed
         }
+    }
+    
+    @objc func nextButtonTapped(){
+        guard let passwordConfirm = passwordConfirmationView.confirmPasswordTextField.text
+        else {
+            print("Invalid input. Please check your data.")
+            return
+        }
+        
+        viewModel?.setPasswordConfirm(inputData: passwordConfirm)
+        
+        viewModel?.register()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 

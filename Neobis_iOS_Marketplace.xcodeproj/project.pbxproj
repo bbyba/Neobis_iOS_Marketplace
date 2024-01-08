@@ -39,6 +39,14 @@
 		DD609A042B48262600CFDC77 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A032B48262600CFDC77 /* APIService.swift */; };
 		DD609A082B4826FB00CFDC77 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A072B4826FB00CFDC77 /* Model.swift */; };
 		DD609A0C2B48287900CFDC77 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A0B2B48287900CFDC77 /* RegistrationViewModel.swift */; };
+		DD609A0F2B4B328E00CFDC77 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A0E2B4B328E00CFDC77 /* PersonalInfoViewController.swift */; };
+		DD609A112B4B329E00CFDC77 /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A102B4B329E00CFDC77 /* PersonalInfoView.swift */; };
+		DD609A152B4B37DA00CFDC77 /* PersonalInfoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A142B4B37DA00CFDC77 /* PersonalInfoTVCell.swift */; };
+		DD609A172B4B3CFA00CFDC77 /* PersonalInfoCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A162B4B3CFA00CFDC77 /* PersonalInfoCategory.swift */; };
+		DD609A1A2B4B571500CFDC77 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A192B4B571500CFDC77 /* AddView.swift */; };
+		DD609A1D2B4B585E00CFDC77 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A1C2B4B585E00CFDC77 /* FavoritesView.swift */; };
+		DD609A1F2B4B586D00CFDC77 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A1E2B4B586D00CFDC77 /* FavoritesViewController.swift */; };
+		DD609A242B4B5E3500CFDC77 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD609A232B4B5E3400CFDC77 /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +86,14 @@
 		DD609A032B48262600CFDC77 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		DD609A072B4826FB00CFDC77 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DD609A0B2B48287900CFDC77 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		DD609A0E2B4B328E00CFDC77 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		DD609A102B4B329E00CFDC77 /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
+		DD609A142B4B37DA00CFDC77 /* PersonalInfoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoTVCell.swift; sourceTree = "<group>"; };
+		DD609A162B4B3CFA00CFDC77 /* PersonalInfoCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoCategory.swift; sourceTree = "<group>"; };
+		DD609A192B4B571500CFDC77 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		DD609A1C2B4B585E00CFDC77 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		DD609A1E2B4B586D00CFDC77 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		DD609A232B4B5E3400CFDC77 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +138,8 @@
 		DD60997E2B34644F00CFDC77 /* Neobis_iOS_Marketplace */ = {
 			isa = PBXGroup;
 			children = (
+				DD609A182B4B56F800CFDC77 /* AddProduct */,
+				DD609A122B4B32A200CFDC77 /* EditProfile */,
 				DD609A0D2B48289C00CFDC77 /* Registration */,
 				DD609A022B48261500CFDC77 /* Service */,
 				DD6099AD2B398FDD00CFDC77 /* Profile */,
@@ -133,7 +151,6 @@
 				DD6099BD2B426A9100CFDC77 /* MainViewController.swift */,
 				DD6099BF2B426A9B00CFDC77 /* ChatsViewController.swift */,
 				DD6099C12B426AAA00CFDC77 /* WalletViewController.swift */,
-				DD6099C32B426ADA00CFDC77 /* AddViewController.swift */,
 				DD609A072B4826FB00CFDC77 /* Model.swift */,
 			);
 			path = Neobis_iOS_Marketplace;
@@ -162,6 +179,7 @@
 		DD6099A52B396FE700CFDC77 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				DD609A222B4B5DD000CFDC77 /* CustomAlert */,
 				DD6099962B37D44600CFDC77 /* CustomTextField.swift */,
 				DD6099A22B396EDE00CFDC77 /* PasswordTextField.swift */,
 				DD6099C52B43358E00CFDC77 /* CustomButton.swift */,
@@ -172,10 +190,9 @@
 		DD6099AD2B398FDD00CFDC77 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				DD6099AB2B398F4700CFDC77 /* profileCategory.swift */,
-				DD6099A62B39886C00CFDC77 /* ProfileView.swift */,
-				DD6099A82B398ACD00CFDC77 /* ProfileTVCell.swift */,
-				DD6099FE2B448DC600CFDC77 /* ProfileViewController.swift */,
+				DD609A212B4B5D5100CFDC77 /* LogoutAlert */,
+				DD609A202B4B5D2F00CFDC77 /* MainProfileScreen */,
+				DD609A1B2B4B584100CFDC77 /* Favorites */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -236,6 +253,69 @@
 				DD6099C72B434A2D00CFDC77 /* Register */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		DD609A122B4B32A200CFDC77 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				DD609A0E2B4B328E00CFDC77 /* PersonalInfoViewController.swift */,
+				DD609A102B4B329E00CFDC77 /* PersonalInfoView.swift */,
+				DD609A142B4B37DA00CFDC77 /* PersonalInfoTVCell.swift */,
+				DD609A162B4B3CFA00CFDC77 /* PersonalInfoCategory.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		DD609A132B4B32CE00CFDC77 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				DD6099A62B39886C00CFDC77 /* ProfileView.swift */,
+				DD6099A82B398ACD00CFDC77 /* ProfileTVCell.swift */,
+				DD6099AB2B398F4700CFDC77 /* profileCategory.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		DD609A182B4B56F800CFDC77 /* AddProduct */ = {
+			isa = PBXGroup;
+			children = (
+				DD6099C32B426ADA00CFDC77 /* AddViewController.swift */,
+				DD609A192B4B571500CFDC77 /* AddView.swift */,
+			);
+			path = AddProduct;
+			sourceTree = "<group>";
+		};
+		DD609A1B2B4B584100CFDC77 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				DD609A1C2B4B585E00CFDC77 /* FavoritesView.swift */,
+				DD609A1E2B4B586D00CFDC77 /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		DD609A202B4B5D2F00CFDC77 /* MainProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DD609A132B4B32CE00CFDC77 /* ProfileView */,
+				DD6099FE2B448DC600CFDC77 /* ProfileViewController.swift */,
+			);
+			path = MainProfileScreen;
+			sourceTree = "<group>";
+		};
+		DD609A212B4B5D5100CFDC77 /* LogoutAlert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LogoutAlert;
+			sourceTree = "<group>";
+		};
+		DD609A222B4B5DD000CFDC77 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				DD609A232B4B5E3400CFDC77 /* CustomAlertView.swift */,
+			);
+			path = CustomAlert;
 			sourceTree = "<group>";
 		};
 		F15265D0DDD055F13355E667 /* Frameworks */ = {
@@ -364,14 +444,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD609A0F2B4B328E00CFDC77 /* PersonalInfoViewController.swift in Sources */,
 				DD6099842B34644F00CFDC77 /* LoginViewController.swift in Sources */,
+				DD609A1A2B4B571500CFDC77 /* AddView.swift in Sources */,
 				DD6099FB2B43E04B00CFDC77 /* PasswordView.swift in Sources */,
 				DD6099A92B398ACD00CFDC77 /* ProfileTVCell.swift in Sources */,
+				DD609A172B4B3CFA00CFDC77 /* PersonalInfoCategory.swift in Sources */,
 				DD6099BC2B426A4600CFDC77 /* TabBarController.swift in Sources */,
 				DD6099BE2B426A9100CFDC77 /* MainViewController.swift in Sources */,
 				DD6099C62B43358E00CFDC77 /* CustomButton.swift in Sources */,
 				DD6099FF2B448DC600CFDC77 /* ProfileViewController.swift in Sources */,
+				DD609A1F2B4B586D00CFDC77 /* FavoritesViewController.swift in Sources */,
 				DD6099FD2B43E05A00CFDC77 /* PasswordConfirmationView.swift in Sources */,
+				DD609A112B4B329E00CFDC77 /* PersonalInfoView.swift in Sources */,
 				DD6099C02B426A9B00CFDC77 /* ChatsViewController.swift in Sources */,
 				DD6099F92B43E03B00CFDC77 /* PasswordConfirmationViewController.swift in Sources */,
 				DD609A082B4826FB00CFDC77 /* Model.swift in Sources */,
@@ -380,11 +465,14 @@
 				DD6099C92B434A5400CFDC77 /* RegisterView.swift in Sources */,
 				DD6099CB2B434A6200CFDC77 /* RegisterViewController.swift in Sources */,
 				DD6099802B34644F00CFDC77 /* AppDelegate.swift in Sources */,
+				DD609A1D2B4B585E00CFDC77 /* FavoritesView.swift in Sources */,
 				DD6099A32B396EDE00CFDC77 /* PasswordTextField.swift in Sources */,
 				DD6099952B3484E100CFDC77 /* LoginView.swift in Sources */,
+				DD609A242B4B5E3500CFDC77 /* CustomAlertView.swift in Sources */,
 				DD6099C22B426AAA00CFDC77 /* WalletViewController.swift in Sources */,
 				DD609A042B48262600CFDC77 /* APIService.swift in Sources */,
 				DD609A0C2B48287900CFDC77 /* RegistrationViewModel.swift in Sources */,
+				DD609A152B4B37DA00CFDC77 /* PersonalInfoTVCell.swift in Sources */,
 				DD6099822B34644F00CFDC77 /* SceneDelegate.swift in Sources */,
 				DD6099A72B39886C00CFDC77 /* ProfileView.swift in Sources */,
 				DD6099AC2B398F4700CFDC77 /* profileCategory.swift in Sources */,

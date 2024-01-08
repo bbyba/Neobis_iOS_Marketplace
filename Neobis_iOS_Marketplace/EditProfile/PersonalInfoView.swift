@@ -1,24 +1,16 @@
 //
-//  ProfileView.swift
+//  PersonalInfoView.swift
 //  Neobis_iOS_Marketplace
 //
 
-import Foundation
+import UIKit
 import SnapKit
 
-class ProfileView: UIView {
-    
-    lazy var titleLabel: UILabel = {
-        let text = UILabel()
-        text.text = "Profile"
-        text.font = UIFont(name: "GothamPro-Medium", size: 18)
-        
-        return text
-    }()
-    
-    lazy var changeButton: UIButton = {
+class PersonalInfoView: UIView {
+
+    lazy var cancelButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Изм.", for: .normal)
+        button.setTitle("Cancel", for: .normal)
         button.backgroundColor = UIColor(red: 0.754, green: 0.754, blue: 0.754, alpha: 0.2)
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = UIFont(name: "GothamPro-Medium", size: 16)
@@ -27,7 +19,19 @@ class ProfileView: UIView {
         
         return button
     }()
-
+    
+    lazy var doneButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Done", for: .normal)
+        button.backgroundColor = UIColor(red: 0.754, green: 0.754, blue: 0.754, alpha: 0.2)
+        button.setTitleColor(.black, for: .normal)
+        button.titleLabel?.font = UIFont(name: "GothamPro-Medium", size: 16)
+        button.frame = CGRect(x: 0, y: 0, width: 56, height: 27)
+        button.layer.cornerRadius = 14
+        
+        return button
+    }()
+    
     lazy var userImage: UIImageView = {
         let image = UIImageView(image: UIImage(named: "defaultProfile"))
         image.contentMode = .scaleAspectFit
@@ -39,42 +43,37 @@ class ProfileView: UIView {
         return image
     }()
     
-    lazy var userName: UILabel = {
-        let label = UILabel()
-        label.text = "Name"
-        label.font = UIFont(name: "GothamPro-Medium", size: 16)
-        label.textColor = .black
+    lazy var pickProfilePicButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Choose an image", for: .normal)
+        button.titleLabel?.font = UIFont(name: "GothamPro-Medium", size: 16)
+        button.setTitleColor(UIColor(red: 0.329, green: 0.345, blue: 0.918, alpha: 1), for: .normal)
+        button.isUserInteractionEnabled = true
         
-        return label
+        return button
     }()
     
-    lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.register(ProfileTVCell.self, forCellReuseIdentifier: "ProfileTVCell")
-        tableView.rowHeight = 70
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        return tableView
-    }()
-    
-    lazy var profileCategories = [
-        [   profileCategory(category: "Favorites", image: "favorites"),
-            profileCategory(category: "My Products", image: "stall")
+    lazy var personalInfoCategories = [
+        [   personalInfoCategory(category: "Name"),
+            personalInfoCategory(category: "Surname"),
+            personalInfoCategory(category: "Username"),
+            personalInfoCategory(category: "Date of Birth")
         ],
-        [   profileCategory(category: "Log out", image: "leave")
+        [   personalInfoCategory(category: "0(000)000"),
+            personalInfoCategory(category: "Email")
         ]
     ]
     
-    lazy var finishRegistationButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = UIColor(red: 0.329, green: 0.345, blue: 0.918, alpha: 1)
-        button.setTitle("Finish registration", for: .normal)
-        button.titleLabel?.textColor = .white
-        button.titleLabel?.font = UIFont(name: "GothamPro-Medium", size: 16)
-        button.layer.cornerRadius = 22
+    lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.register(PersonalInfoTVCell.self, forCellReuseIdentifier: "PersonalInfoTVCell")
+        tableView.rowHeight = 50
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+//        tableView.tableFooterView = UIView(frame: .zero)
         
-        return button
+        return tableView
     }()
     
     override init(frame: CGRect) {
@@ -86,9 +85,8 @@ class ProfileView: UIView {
     
     func addSubviews(){
         addSubview(userImage)
-        addSubview(userName)
+        addSubview(pickProfilePicButton)
         addSubview(tableView)
-        addSubview(finishRegistationButton)
     }
     
     func setupConstraints(){
@@ -99,22 +97,17 @@ class ProfileView: UIView {
             make.width.equalTo(80)
         }
         
-        userName.snp.makeConstraints { make in
+        pickProfilePicButton.snp.makeConstraints { make in
             make.top.equalTo(userImage.snp.bottom).offset(15)
             make.centerX.equalToSuperview()
         }
         
         tableView.snp.makeConstraints { make in
-            make.top.equalTo(userName.snp.bottom).offset(24)
+            make.top.equalTo(pickProfilePicButton.snp.bottom).offset(24)
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().inset(20)
-            make.height.equalTo(225)
-        }
-        
-        finishRegistationButton.snp.makeConstraints { make in
-            make.bottom.equalTo(safeAreaLayoutGuide.snp.bottom).inset(30)
-            make.leading.trailing.equalToSuperview().inset(20)
-            make.height.equalTo(44)
+//            make.bottom.equalToSuperview().offset(100)
+            make.height.equalTo(316)
         }
     }
     
@@ -123,25 +116,23 @@ class ProfileView: UIView {
     }
 }
 
-
-
-extension ProfileView: UITableViewDataSource, UITableViewDelegate {
+extension PersonalInfoView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return profileCategories.count
+        return personalInfoCategories.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return profileCategories[section].count
+        return personalInfoCategories[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileTVCell", for: indexPath) as? ProfileTVCell else {
-            fatalError("Unable to dequeue ProfileTVCell")}
-        cell.configure(with: profileCategories[indexPath.section][indexPath.row])
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PersonalInfoTVCell", for: indexPath) as? PersonalInfoTVCell else {
+            fatalError("Unable to dequeue PersonalInfoTVCell")}
+        cell.configure(with: personalInfoCategories[indexPath.section][indexPath.row])
         
         return cell
     }
@@ -159,4 +150,5 @@ extension ProfileView: UITableViewDataSource, UITableViewDelegate {
         return footerView
     }
 }
+
 
